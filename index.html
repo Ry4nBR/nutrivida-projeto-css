@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriPopular — Calculadora de IMC e Dieta Acessível</title>
+  <!-- Inclusão externa do CSS conforme solicitado no item 1 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Elemento 1: Cabeçalho -->
+  <header class="el-01-header">
+    <!-- Elemento 2: Container interno do topo -->
+    <div class="el-02-header-container">
+      <!-- Elemento 3: Logo / Título -->
+      <h1 class="el-03-logo">Nutri<span>Popular</span></h1>
+      <!-- Elemento 4: Menu de Navegação -->
+      <nav class="el-04-nav">
+        <!-- Elemento 5: Links do menu -->
+        <a href="#calculadora" class="el-05-nav-link">Calcular IMC</a>
+        <a href="#tabela-imc" class="el-05-nav-link">Classificação</a>
+        <a href="#cardapios" class="el-05-nav-link">Dieta Barata</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Elemento 6: Banner Introdutório -->
+  <section class="el-06-hero">
+    <!-- Elemento 7: Caixa de texto do banner -->
+    <div class="el-07-hero-box">
+      <!-- Elemento 8: Título principal -->
+      <h2 class="el-08-hero-title">Saúde de verdade que cabe no seu bolso</h2>
+      <!-- Elemento 9: Subtítulo explicativo -->
+      <p class="el-09-hero-desc">
+        Descubra seu Índice de Massa Corporal (IMC) para adultos e receba sugestões de alimentação saudável usando arroz, feijão, ovos e itens da feira.
+      </p>
+    </div>
+  </section>
+
+  <!-- Elemento 10: Área Principal -->
+  <main class="el-10-main">
+
+    <!-- Elemento 11: Seção da Calculadora e Resultado -->
+    <section id="calculadora" class="el-11-calc-wrapper">
+      
+      <!-- Elemento 12: Cartão do Formulário -->
+      <div class="el-12-card-form">
+        <h3 class="el-13-section-title">1. Calcule seu IMC (Adultos)</h3>
+        
+        <div class="form-group">
+          <label for="peso">Seu Peso (kg):</label>
+          <!-- Elemento 14: Campos de entrada -->
+          <input type="number" id="peso" class="el-14-input" placeholder="Ex: 72.5" step="0.1">
+        </div>
+
+        <div class="form-group">
+          <label for="altura">Sua Altura (m):</label>
+          <input type="number" id="altura" class="el-14-input" placeholder="Ex: 1.70" step="0.01">
+        </div>
+
+        <div class="form-group">
+          <label for="atividade">Nível de Atividade Diária:</label>
+          <select id="atividade" class="el-14-input">
+            <option value="1.2">Pouco movimento / Trabalho sentado</option>
+            <option value="1.375">Caminhada leve ou trabalho em pé</option>
+            <option value="1.55">Trabalho braçal pesado ou exercícios</option>
+          </select>
+        </div>
+
+        <!-- Elemento 15: Botão de Ação -->
+        <button type="button" onclick="calcularTudo()" class="el-15-btn">Calcular IMC e Ver Dieta</button>
+      </div>
+
+      <!-- Elemento 16: Cartão de Resultado -->
+      <div class="el-16-card-result" id="caixa-resultado">
+        <h3 class="el-13-section-title">2. Seu Resultado e Meta Calórica</h3>
+        <div id="resultado-conteudo" class="resultado-vazio">
+          <p>Preencha seu peso e altura ao lado para ver sua classificação e o plano alimentar econômico recomendado.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Elemento 17: Seção da Tabela de Referência OMS -->
+    <section id="tabela-imc" class="el-17-ref-section">
+      <h3 class="el-13-section-title">Tabela Oficial de Classificação (Adultos)</h3>
+      <div class="tabela-flex">
+        <div class="linha-ref"><span>Abaixo de 18,5</span><strong>Abaixo do peso</strong></div>
+        <div class="linha-ref destaque-verde"><span>18,5 a 24,9</span><strong>Peso normal (Saudável)</strong></div>
+        <div class="linha-ref"><span>25,0 a 29,9</span><strong>Sobrepeso</strong></div>
+        <div class="linha-ref"><span>30,0 a 34,9</span><strong>Obesidade Grau I</strong></div>
+        <div class="linha-ref"><span>35,0 ou mais</span><strong>Obesidade Grau II / III</strong></div>
+      </div>
+    </section>
+
+    <!-- Elemento 18: Seção de Alimentos Acessíveis -->
+    <section id="cardapios" class="el-18-tips-section">
+      <h3 class="el-13-section-title">Base da Dieta Econômica (Baratos e Nutritivos)</h3>
+      
+      <div class="cards-alimentos-flex">
+        <!-- Elemento 19: Cards de Alimentos -->
+        <article class="el-19-food-card">
+          <h4>Proteínas Baratas</h4>
+          <p>Ovo de galinha, peito ou coxa de frango, sardinha em lata, fígado bovino e feijão carioca ou preto.</p>
+        </article>
+
+        <article class="el-19-food-card">
+          <h4>Energia do Dia a Dia</h4>
+          <p>Arroz branco ou parboilizado, cuscuz de milho, batata-doce, mandioca (aipim) e aveia em flocos.</p>
+        </article>
+
+        <article class="el-19-food-card">
+          <h4>Vitaminas da Feira</h4>
+          <p>Banana nanica, mamão, laranja, repolho, cenoura, chuchu e abobrinha (compre na xepa da feira).</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Elemento 20: Rodapé -->
+  <footer class="el-20-footer">
+    <p>NutriPopular — Projeto educativo de saúde acessível. Consulte um posto de saúde (UBS) para acompanhamento gratuito.</p>
+  </footer>
+
+  <!-- Script funcional para cálculo de IMC, calorias e recomendação de dieta -->
+  <script>
+    function calcularTudo() {
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value);
+      const fator = parseFloat(document.getElementById('atividade').value);
+      const box = document.getElementById('resultado-conteudo');
+
+      if (!peso || !altura || peso <= 0 || altura <= 0) {
+        box.innerHTML = '<p style="color: #b91c1c; font-weight: bold;">Por favor, digite um peso e uma altura válidos.</p>';
+        return;
+      }
+
+      const imc = peso / (altura * altura);
+      const gastoBase = peso * 24 * fator;
+      let classificacao = '';
+      let caloriasMeta = Math.round(gastoBase);
+      let objetivo = '';
+      let dietaSugerida = '';
+
+      if (imc < 18.5) {
+        classificacao = 'Abaixo do peso';
+        caloriasMeta += 350;
+        objetivo = 'Ganho de peso saudável com comida de verdade';
+        dietaSugerida = `
+          <ul>
+            <li><strong>Café da manhã:</strong> Cuscuz com 2 ovos mexidos + 1 banana com aveia.</li>
+            <li><strong>Almoço:</strong> Arroz, feijão bem servido, frango ensopado e salada de cenoura ralada.</li>
+            <li><strong>Lanche:</strong> Pão francês com pasta de amendoim caseira ou ovo + café com leite.</li>
+            <li><strong>Jantar:</strong> Mandioca cozida com carne moída de segunda (acém/músculo) e repolho refogado.</li>
+          </ul>`;
+      } else if (imc < 25) {
+        classificacao = 'Peso Normal (Saudável)';
+        objetivo = 'Manutenção da saúde e disposição';
+        dietaSugerida = `
+          <ul>
+            <li><strong>Café da manhã:</strong> 2 fatias de pão ou tapioca com 1 ovo + 1 fruta da época.</li>
+            <li><strong>Almoço:</strong> 4 colheres de arroz, 1 concha de feijão, 1 filé de frango e salada verde à vontade.</li>
+            <li><strong>Lanche:</strong> 1 fruta (banana ou laranja) + 2 colheres de aveia.</li>
+            <li><strong>Jantar:</strong> Arroz, feijão, omelete de 2 ovos com tomate e legumes cozidos (chuchu/abobrinha).</li>
+          </ul>`;
+      } else if (imc < 30) {
+        classificacao = 'Sobrepeso';
+        caloriasMeta -= 400;
+        objetivo = 'Redução gradual sem passar fome';
+        dietaSugerida = `
+          <ul>
+            <li><strong>Café da manhã:</strong> 2 ovos mexidos + 1 fatia de mamão ou 1 laranja + café sem açúcar.</li>
+            <li><strong>Almoço:</strong> Metade do prato de salada crua (repolho, tomate, alface), 3 colheres de arroz, 1 concha de feijão e frango grelhado.</li>
+            <li><strong>Lanche:</strong> 1 banana pequena ou 1 ovo cozido.</li>
+            <li><strong>Jantar:</strong> Sopa de legumes com frango desfiado OU salada completa com sardinha/ovo.</li>
+          </ul>`;
+      } else {
+        classificacao = 'Obesidade';
+        caloriasMeta -= 500;
+        objetivo = 'Reeducação alimentar econômica e saciedade';
+        dietaSugerida = `
+          <ul>
+            <li><strong>Café da manhã:</strong> 2 ovos cozidos ou mexidos + café preto ou com pouco leite + 1 maçã/laranja.</li>
+            <li><strong>Almoço:</strong> Muita salada de repolho e cenoura antes de tudo, 2 colheres de arroz, 1 concha de feijão e 1 pedaço de frango sem pele.</li>
+            <li><strong>Lanche:</strong> 1 fruta inteira (evite sucos coados para manter as fibras).</li>
+            <li><strong>Jantar:</strong> Legumes refogados (abobrinha, chuchu, vagem) com 2 ovos ou carne moída magra.</li>
+          </ul>`;
+      }
+
+      box.innerHTML = `
+        <div class="badge-imc">Seu IMC: <strong>${imc.toFixed(1)}</strong> — ${classificacao}</div>
+        <p class="meta-calorica"><strong>Meta diária estimada:</strong> ~${caloriasMeta} kcal/dia (${objetivo})</p>
+        <div class="lista-dieta">
+          <strong>Sugestão de Cardápio Econômico:</strong>
+          ${dietaSugerida}
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>

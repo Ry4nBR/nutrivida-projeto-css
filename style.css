@@ -1,0 +1,362 @@
+/* ==========================================================================
+   RESET E BASE
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f3;
+  color: #263228;
+  line-height: 1.5;
+  /* Flexbox 01 e 02 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   PARTE 1: 20 ELEMENTOS COM CONTENT (width/height), PADDING, BORDER E MARGIN
+   ========================================================================== */
+
+/* Elemento 01: Cabeçalho principal */
+.el-01-header {
+  width: 100%;                          /* Content */
+  min-height: 70px;                     /* Content */
+  padding: 12px 20px;                   /* Padding */
+  border-bottom: 3px solid #2e7d32;     /* Border */
+  margin: 0 0 10px 0;                   /* Margin */
+  background-color: #ffffff;
+}
+
+/* Elemento 02: Container interno do cabeçalho */
+.el-02-header-container {
+  width: 100%;                          /* Content */
+  max-width: 1050px;                    /* Content */
+  padding: 5px 10px;                    /* Padding */
+  border: 1px dashed #c8e6c9;           /* Border */
+  margin: 0 auto;                       /* Margin */
+  /* Flexbox 03, 04, 05 e 06 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Elemento 03: Logotipo */
+.el-03-logo {
+  width: auto;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 4px 8px;                     /* Padding */
+  border-left: 4px solid #e65100;       /* Border */
+  margin: 4px 0;                        /* Margin */
+  font-size: 1.5rem;
+  color: #1b5e20;
+}
+.el-03-logo span {
+  color: #e65100;
+}
+
+/* Elemento 04: Barra de navegação */
+.el-04-nav {
+  width: auto;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 4px;                         /* Padding */
+  border: 1px solid transparent;        /* Border */
+  margin: 4px 0;                        /* Margin */
+  /* Flexbox 07 e 08 */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Elemento 05: Links do menu */
+.el-05-nav-link {
+  width: auto;                          /* Content */
+  height: 36px;                         /* Content */
+  padding: 6px 14px;                    /* Padding */
+  border: 1px solid #a5d6a7;            /* Border */
+  margin: 2px;                          /* Margin */
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #f1f8e9;
+  /* Flexbox 09 */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Elemento 06: Banner Hero */
+.el-06-hero {
+  width: 94%;                           /* Content */
+  max-width: 1050px;                    /* Content */
+  padding: 24px 20px;                   /* Padding */
+  border: 2px solid #81c784;            /* Border */
+  margin: 10px auto 20px auto;          /* Margin */
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  /* Flexbox 10 */
+  display: flex;
+  justify-content: center;
+}
+
+/* Elemento 07: Caixa interna do banner */
+.el-07-hero-box {
+  width: 100%;                          /* Content */
+  max-width: 780px;                     /* Content */
+  padding: 10px;                        /* Padding */
+  border: 1px solid transparent;        /* Border */
+  margin: 0 auto;                       /* Margin */
+  text-align: center;
+}
+
+/* Elemento 08: Título do banner */
+.el-08-hero-title {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 6px 0;                       /* Padding */
+  border-bottom: 2px solid #a5d6a7;     /* Border */
+  margin: 0 0 12px 0;                   /* Margin */
+  color: #1b5e20;
+  font-size: 1.65rem;
+}
+
+/* Elemento 09: Parágrafo descritivo do banner */
+.el-09-hero-desc {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 4px 8px;                     /* Padding */
+  border: 0px none;                     /* Border */
+  margin: 0;                            /* Margin */
+  color: #334236;
+  font-size: 1rem;
+}
+
+/* Elemento 10: Conteúdo principal (Main) */
+.el-10-main {
+  width: 94%;                           /* Content */
+  max-width: 1050px;                    /* Content */
+  padding: 10px;                        /* Padding */
+  border: 1px solid #dce4dc;            /* Border */
+  margin: 0 auto 24px auto;             /* Margin */
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* Flexbox 11 e 12 */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Elemento 11: Wrapper da calculadora + resultado */
+.el-11-calc-wrapper {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 10px;                        /* Padding */
+  border: 1px solid #e0e0e0;            /* Border */
+  margin: 0 0 20px 0;                   /* Margin */
+  border-radius: 8px;
+  /* Flexbox 13, 14 e 15 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Elemento 12: Cartão do formulário */
+.el-12-card-form {
+  width: 100%;                          /* Content */
+  min-height: 320px;                    /* Content */
+  padding: 18px;                        /* Padding */
+  border: 2px solid #c8e6c9;            /* Border */
+  margin: 0;                            /* Margin */
+  border-radius: 8px;
+  background-color: #fafcfa;
+  /* Flexbox 16 */
+  flex: 1 1 320px;
+}
+
+/* Elemento 13: Títulos das seções */
+.el-13-section-title {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 0 0 8px 0;                   /* Padding */
+  border-bottom: 2px solid #e65100;     /* Border */
+  margin: 0 0 16px 0;                   /* Margin */
+  color: #1b5e20;
+  font-size: 1.2rem;
+}
+
+/* Elemento 14: Campos de Input e Select */
+.el-14-input {
+  width: 100%;                          /* Content */
+  height: 42px;                         /* Content */
+  padding: 8px 12px;                    /* Padding */
+  border: 1px solid #9e9e9e;            /* Border */
+  margin: 6px 0 14px 0;                 /* Margin */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+/* Elemento 15: Botão calcular */
+.el-15-btn {
+  width: 100%;                          /* Content */
+  height: 46px;                         /* Content */
+  padding: 10px 16px;                   /* Padding */
+  border: 2px solid #bf360c;            /* Border */
+  margin: 8px 0 0 0;                    /* Margin */
+  background-color: #e65100;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.el-15-btn:hover {
+  background-color: #d84315;
+}
+
+/* Elemento 16: Cartão de resultado */
+.el-16-card-result {
+  width: 100%;                          /* Content */
+  min-height: 320px;                    /* Content */
+  padding: 18px;                        /* Padding */
+  border: 2px solid #ffe0b2;            /* Border */
+  margin: 0;                            /* Margin */
+  border-radius: 8px;
+  background-color: #fffdf9;
+  /* Flexbox 17 */
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Elemento 17: Seção da tabela de classificação OMS */
+.el-17-ref-section {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 16px;                        /* Padding */
+  border: 1px solid #c8e6c9;            /* Border */
+  margin: 0 0 20px 0;                   /* Margin */
+  border-radius: 8px;
+  background-color: #f9fbf9;
+}
+
+/* Elemento 18: Seção de dicas de alimentos */
+.el-18-tips-section {
+  width: 100%;                          /* Content */
+  height: auto;                         /* Content */
+  padding: 16px;                        /* Padding */
+  border: 1px solid #d7ccc8;            /* Border */
+  margin: 0 0 10px 0;                   /* Margin */
+  border-radius: 8px;
+  background-color: #fdfbf7;
+}
+
+/* Elemento 19: Cards individuais de alimentos */
+.el-19-food-card {
+  width: 100%;                          /* Content */
+  min-height: 130px;                    /* Content */
+  padding: 14px;                        /* Padding */
+  border: 1px solid #a5d6a7;            /* Border */
+  margin: 4px 0;                        /* Margin */
+  background-color: #ffffff;
+  border-radius: 6px;
+  /* Flexbox 18 */
+  flex: 1 1 250px;
+}
+
+/* Elemento 20: Rodapé */
+.el-20-footer {
+  width: 100%;                          /* Content */
+  min-height: 60px;                     /* Content */
+  padding: 16px 20px;                   /* Padding */
+  border-top: 3px solid #2e7d32;        /* Border */
+  margin: 10px 0 0 0;                   /* Margin */
+  background-color: #e8f5e9;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #1b5e20;
+}
+
+/* ==========================================================================
+   COMPLEMENTOS DE FLEXBOX E DESTAQUES DE SINCRONIZAÇÃO
+   ========================================================================== */
+.tabela-flex {
+  /* Flexbox 19 */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linha-ref {
+  /* Flexbox 20 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+/* Classe ativada automaticamente pelo JS quando o IMC é calculado */
+.faixa-ativa {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border-color: #1b5e20;
+  font-weight: bold;
+  transform: scale(1.01);
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.25);
+}
+
+.cards-alimentos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 14px;
+}
+
+/* Estilos internos do resultado calculado */
+.badge-imc {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.meta-calorica {
+  margin: 8px 0;
+  color: #bf360c;
+}
+
+.lista-dieta ul {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+.lista-dieta li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* Caixa informativa sobre Bioimpedância */
+.aviso-bioimpedancia {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background-color: #eef6f0;
+  border-left: 4px solid #2e7d32;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  color: #1f3322;
+}
