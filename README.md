@@ -1,8 +1,8 @@
-# 🥗 NutriPopular — Calculadora de IMC e Dieta Acessível
+# 🥗 NutriVida — Calculadora de IMC e Alimentação Equilibrada
 
-O **NutriPopular** é uma aplicação web desenvolvida para calcular o Índice de Massa Corporal (IMC) em adultos e recomendar cardápios saudáveis e de baixo custo. O projeto foi projetado com um visual moderno e acolhedor, voltado para pessoas comuns que buscam qualidade de vida utilizando ingredientes acessíveis do cotidiano (como arroz, feijão, ovos e itens de feira).
+O **NutriVida** é uma aplicação web desenvolvida para calcular o Índice de Massa Corporal (IMC) em adultos, sincronizar o resultado com a tabela oficial da OMS e sugerir cardápios saudáveis e práticos. O projeto foi desenhado com uma abordagem respeitosa, moderna e inclusiva, voltada para pessoas comuns que buscam qualidade de vida utilizando comida de verdade e ingredientes do cotidiano (como arroz, feijão, ovos, carnes magras e vegetais da estação).
 
-Este repositório foi construído para atender integralmente a todos os critérios da **Atividade 01** - **Aula 07**
+Este repositório foi construído para atender integralmente a todos os critérios da **Atividade 01 — Aula 07**.
 
 ---
 
@@ -21,18 +21,19 @@ Este repositório foi construído para atender integralmente a todos os critéri
      - **Margin** (`margin`)
 
 3. **Flexbox e Responsividade:**
-   - Aplicação de mais de 20 propriedades de Flexbox (`display: flex`, `flex-direction`, `justify-content`, `align-items`, `flex-wrap`, `gap`, `flex`, etc.).
+   - Aplicação de mais de 20 propriedades/regras de Flexbox (`display: flex`, `flex-direction`, `justify-content`, `align-items`, `flex-wrap`, `gap`, `flex`, etc.).
    - Design totalmente responsivo que se adapta perfeitamente a telas de celulares, tablets e desktops.
 
 ---
 
 ## 🚀 Funcionalidades da Aplicação
 
-- **Cálculo Prático de IMC:** Insira peso, altura e nível de atividade diária para receber o diagnóstico nutricional.
-- **Classificação pela OMS:** Tabela de referência visual integrada e indicação da faixa atual de IMC.
-- **Estimativa Calórica:** Cálculo da meta de calorias diárias ajustada ao objetivo (ganho, manutenção ou perda de peso).
-- **Cardápio Econômico Automatizado:** Sugestão de refeições diárias (Café da manhã, Almoço, Lanche e Jantar) com alimentos baratos.
-- **Guia de Alimentos de Baixo Custo:** Sugestões práticas de proteínas, carboidratos e feira acessíveis.
+- **Cálculo Prático e Instrução Clara:** Interface com orientação para separação decimal por ponto (ex: `72.5` kg e `1.70` m), tratando automaticamente digitações com vírgula.
+- **Sincronização em Tempo Real com a OMS:** Destaque automático da faixa de classificação correspondente na tabela oficial (de Abaixo do Peso até Obesidade Grau III).
+- **Orientação Clínica sobre Bioimpedância:** Nota explicativa destacando que o IMC é uma ferramenta de *triagem rápida*, enquanto a *bioimpedância* é o método recomendado para mensurar gordura, massa muscular e hidratação.
+- **Estimativa Calórica Diária:** Cálculo da meta calórica ajustada ao nível de atividade física e objetivo nutricional.
+- **Sugestões de Cardápio Equilibrado:** Opções de refeições completas (Café da manhã, Almoço, Lanche e Jantar) utilizando ingredientes acessíveis do dia a dia.
+- **Guia Alimentar do Cotidiano:** Categorização prática de proteínas, carboidratos e vegetais frescos.
 
 ---
 
@@ -40,7 +41,7 @@ Este repositório foi construído para atender integralmente a todos os critéri
 
 ```
 atividade-01-imc/
-├── index.html   # Estrutura HTML da aplicação com script de cálculo
+├── index.html   # Estrutura HTML da aplicação com script de cálculo e sincronização
 ├── style.css    # Folha de estilo externa (Box Model + Flexbox)
 └── README.md    # Documentação do projeto
 ```
@@ -57,5 +58,5 @@ atividade-01-imc/
 
 ## 🎨 Conceito Visual e Linguagem
 
-- **Público-alvo:** População de renda média e baixa interessada em reeducação alimentar.
-- **Identidade Visual:** Cores verdes e alaranjadas que transmitem saúde e energia sem parecer de luxo ou de difícil acesso.
+- **Linguagem Inclusiva e Respeitosa:** Eliminação de termos pejorativos, promovendo a alimentação saudável através da "comida de verdade".
+- **Identidade Visual:** Tons verdes e alaranjados que transmitem saúde, bem-estar e acessibilidade com um visual moderno e acolhedor.
